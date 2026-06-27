@@ -8,7 +8,6 @@ description: Add or review TanStack Query server-state code, query key factories
 Read these original standards before acting:
 
 - `${CLAUDE_PLUGIN_ROOT}/standards/tanstack-query-standard.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
 - `${CLAUDE_PLUGIN_ROOT}/standards/function-naming.md`
 
 ## Purpose

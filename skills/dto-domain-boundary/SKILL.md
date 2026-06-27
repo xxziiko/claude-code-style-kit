@@ -7,7 +7,8 @@ description: Keep external DTOs, generated types, API responses, database rows, 
 
 Read these original standards before acting:
 
-- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/function-naming.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/tanstack-query-standard.md` when server-state code is involved.
 
 Check:
 

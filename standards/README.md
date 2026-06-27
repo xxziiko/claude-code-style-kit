@@ -6,7 +6,6 @@
 
 ## 포함 표준
 
-- `api-domain-ui-standard.md` - API, domain, UI 레이어 경계와 DTO/domain 타입 경계.
 - `e2e-network-mocking-standard.md` - Playwright E2E와 MSW browser worker의 network mocking 책임 분리.
 - `function-naming.md` - 레이어별 함수 네이밍 규칙.
 - `tanstack-query-standard.md` - TanStack Query query/mutation/key/invalidation 적용 기준.

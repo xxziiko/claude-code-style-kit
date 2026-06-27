@@ -4,7 +4,7 @@ Reusable Claude Code plugin assets for producing consistent code, tests, review 
 
 ## Includes
 
-- Original harness standards needed by the bundled skills: TypeScript style, function naming, API/domain/UI boundaries, TanStack Query, test-driven generation, and E2E network mocking.
+- Original harness standards needed by the bundled skills: TypeScript style, function naming, TanStack Query, test-driven generation, and E2E network mocking.
 - Skills that apply those standards in focused workflows.
 - Agents for review, verification, testing, architecture, and build repair.
 - Thin commands for common entrypoints.

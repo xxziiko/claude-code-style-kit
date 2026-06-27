@@ -8,7 +8,7 @@ description: Apply reusable TypeScript/React coding style standards for readabil
 Read these original standards before acting:
 
 - `${CLAUDE_PLUGIN_ROOT}/standards/typescript-code-style.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/function-naming.md`
 
 Apply the project’s local conventions first when they are stricter. If local patterns conflict with this plugin, report the conflict and follow the project unless the user asks to migrate conventions.
 
@@ -25,7 +25,7 @@ Before editing:
 ## Implementation Checklist
 
 - Name values and functions by intent.
-- Keep transport, domain, and UI responsibilities separate according to the source standards.
+- Keep transport, server-state, and UI responsibilities separate according to the source standards.
 - Prefer existing project helpers over new abstractions.
 - Add an abstraction only when it removes real duplication or clarifies ownership.
 - Keep component state as local as possible.
