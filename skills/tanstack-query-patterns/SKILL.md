@@ -10,7 +10,6 @@ Read these original standards before acting:
 - `${CLAUDE_PLUGIN_ROOT}/standards/tanstack-query-standard.md`
 - `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
 - `${CLAUDE_PLUGIN_ROOT}/standards/function-naming.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/scaffold-rest-domain-design.md` when creating a new server-state surface.
 
 ## Purpose
 

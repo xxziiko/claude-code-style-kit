@@ -8,9 +8,6 @@ description: Keep external DTOs, generated types, API responses, database rows, 
 Read these original standards before acting:
 
 - `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/domain-feature-architecture-standard.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/rest-api-migration-standard.md` when migration from an existing API surface is involved.
-- `${CLAUDE_PLUGIN_ROOT}/standards/scaffold-rest-domain-design.md` when scaffolding a new REST/domain surface.
 
 Check:
 

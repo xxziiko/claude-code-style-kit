@@ -26,8 +26,9 @@ The plugin should preserve the original standard documents as the source of trut
 
 ### Standards
 
-- Original files from the source `docs/standards/` directory, preserving filenames and wording.
+- Required original files from the source `docs/standards/` directory, preserving filenames and wording.
 - Skills may explain how to apply these standards, but must not replace them with summaries.
+- Exclude API adoption workflow documents such as `create-api-workflow-standard.md`, `rest-api-migration-standard.md`, and `scaffold-rest-domain-design.md`.
 
 ### Skills
 
