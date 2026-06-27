@@ -1,0 +1,27 @@
+{
+  "name": "xxziiko-style-kit",
+  "owner": {
+    "name": "xxziiko"
+  },
+  "description": "Private Claude Code plugin marketplace for reusable coding, testing, review, and TanStack Query conventions.",
+  "plugins": [
+    {
+      "name": "claude-code-style-kit",
+      "source": "./",
+      "description": "Reusable coding, testing, review, and TanStack Query conventions for consistent Claude Code output across projects.",
+      "version": "0.1.0",
+      "author": {
+        "name": "kwonjiho"
+      },
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "style-guide",
+        "testing",
+        "react",
+        "tanstack-query",
+        "code-review"
+      ]
+    }
+  ]
+}
