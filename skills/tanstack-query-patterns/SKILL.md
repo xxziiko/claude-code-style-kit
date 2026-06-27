@@ -5,15 +5,16 @@ description: Add or review TanStack Query server-state code, query key factories
 
 # TanStack Query Patterns
 
-Read:
+Read these original standards before acting:
 
-- `${CLAUDE_PLUGIN_ROOT}/standards/tanstack-query-patterns.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/dto-domain-boundary.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/tanstack-query-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
 - `${CLAUDE_PLUGIN_ROOT}/standards/function-naming.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/scaffold-rest-domain-design.md` when creating a new server-state surface.
 
 ## Purpose
 
-Create or review TanStack Query code so server-state behavior is consistent, cache ownership is explicit, and transport details do not leak into UI code.
+Create or review TanStack Query code so server-state behavior follows the original query/mutation ownership standard, cache ownership is explicit, and transport details do not leak into UI code.
 
 ## Workflow
 

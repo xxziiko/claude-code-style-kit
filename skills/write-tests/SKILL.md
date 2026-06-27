@@ -8,8 +8,9 @@ description: Write and run tests from an approved test matrix, concrete bounded 
 Read relevant standards first:
 
 - `${CLAUDE_PLUGIN_ROOT}/standards/test-driven-generation-workflow.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/testing-code-style.md`
-- `${CLAUDE_PLUGIN_ROOT}/standards/e2e-network-mocking.md` when E2E or browser behavior is involved
+- `${CLAUDE_PLUGIN_ROOT}/standards/e2e-network-mocking-standard.md` when E2E or browser behavior is involved
+- `${CLAUDE_PLUGIN_ROOT}/standards/e2e-ci-strategy.md` when CI lane choice matters
+- `${CLAUDE_PLUGIN_ROOT}/standards/qa-e2e-coverage-harness.md` when QA coverage mapping is involved
 
 ## Purpose
 

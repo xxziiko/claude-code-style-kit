@@ -5,13 +5,19 @@ description: Apply reusable TypeScript/React coding style standards for readabil
 
 # Coding Style Guide
 
-Read `${CLAUDE_PLUGIN_ROOT}/standards/coding-style-guide.md`.
+Read these original standards before acting:
+
+- `${CLAUDE_PLUGIN_ROOT}/standards/typescript-code-style.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/domain-feature-architecture-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/shared-ui-conventions.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/component-composition-standard.md` when editing React components.
 
 Apply the project’s local conventions first when they are stricter. If local patterns conflict with this plugin, report the conflict and follow the project unless the user asks to migrate conventions.
 
 ## Purpose
 
-Make implementation output consistent: readable names, cohesive files, predictable side effects, type-safe boundaries, and small reviewable diffs.
+Make implementation output consistent with the bundled source standards: readable names, cohesive files, predictable side effects, type-safe boundaries, and small reviewable diffs.
 
 Before editing:
 
@@ -22,7 +28,7 @@ Before editing:
 ## Implementation Checklist
 
 - Name values and functions by intent.
-- Keep transport, domain, and UI responsibilities separate.
+- Keep transport, domain, feature, shared, and UI responsibilities separate according to the source standards.
 - Prefer existing project helpers over new abstractions.
 - Add an abstraction only when it removes real duplication or clarifies ownership.
 - Keep component state as local as possible.

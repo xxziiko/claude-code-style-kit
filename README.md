@@ -4,14 +4,13 @@ Reusable Claude Code plugin assets for producing consistent code, tests, review 
 
 ## Includes
 
-- Standards for code style, function naming, DTO boundaries, TanStack Query, and test-driven generation.
+- Original harness standards for TypeScript style, function naming, API/domain/UI boundaries, domain-feature architecture, TanStack Query, test-driven generation, E2E mocking, and related workflow contracts.
 - Skills that apply those standards in focused workflows.
 - Agents for review, verification, testing, architecture, and build repair.
 - Thin commands for common entrypoints.
 
 ## Does Not Include
 
-- Project-specific domain rules.
 - API adoption workflows tied to a specific codegen or registry.
 - Automatic installation of third-party plugins.
 - Company-specific PR, branch, or release conventions.

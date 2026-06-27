@@ -5,7 +5,12 @@ description: Keep external DTOs, generated types, API responses, database rows, 
 
 # DTO / Domain Boundary
 
-Read `${CLAUDE_PLUGIN_ROOT}/standards/dto-domain-boundary.md`.
+Read these original standards before acting:
+
+- `${CLAUDE_PLUGIN_ROOT}/standards/api-domain-ui-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/domain-feature-architecture-standard.md`
+- `${CLAUDE_PLUGIN_ROOT}/standards/rest-api-migration-standard.md` when migration from an existing API surface is involved.
+- `${CLAUDE_PLUGIN_ROOT}/standards/scaffold-rest-domain-design.md` when scaffolding a new REST/domain surface.
 
 Check:
 
@@ -14,7 +19,7 @@ Check:
 - Whether UI code imports transport/generated types.
 - Whether mapper tests protect real policy instead of field copying.
 
-Keep normalization centralized and explicit.
+Keep normalization centralized and explicit. Mapper ownership follows the source standards even when the mapping is mechanically simple.
 
 ## Boundary Decision Steps
 

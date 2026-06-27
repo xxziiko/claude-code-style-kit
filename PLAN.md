@@ -4,19 +4,19 @@
 
 Create a reusable Claude Code plugin that makes code, tests, reviews, and TanStack Query server-state output consistent across new projects.
 
-The plugin should encode personal preferences as reusable standards without depending on any specific company, product, API registry, codegen tool, or repository path.
+The plugin should preserve the original standard documents as the source of truth, while skills provide reusable execution guidance around those standards.
 
 ## Non-Goals
 
-- Do not include project-specific API adoption workflows.
-- Do not require a specific codegen tool.
+- Do not include project-specific API adoption workflows as executable commands.
+- Do not require a specific codegen tool for installation or use.
 - Do not require external companion plugins.
 - Do not install third-party plugins automatically.
-- Do not encode company-specific PR, branch, release, or domain rules.
+- Do not simplify source standards into lossy summaries.
 
 ## Architecture
 
-- `standards/`: source of truth for judgment.
+- `standards/`: original source of truth for judgment.
 - `skills/`: focused workflows that read and apply standards.
 - `agents/`: role-specific review/execution lenses.
 - `commands/`: thin entrypoints for common usage.
@@ -26,13 +26,8 @@ The plugin should encode personal preferences as reusable standards without depe
 
 ### Standards
 
-- `coding-style-guide.md`
-- `function-naming.md`
-- `dto-domain-boundary.md`
-- `tanstack-query-patterns.md`
-- `test-driven-generation-workflow.md`
-- `testing-code-style.md`
-- `e2e-network-mocking.md`
+- Original files from the source `docs/standards/` directory, preserving filenames and wording.
+- Skills may explain how to apply these standards, but must not replace them with summaries.
 
 ### Skills
 
@@ -74,26 +69,19 @@ Recommended companions:
 
 ## Generalization Rules
 
-Remove or avoid:
+Do not rewrite source standards for generality. If a source standard contains project-specific examples, keep them as provenance and examples of the original engineering intent.
 
-- fixed project paths
-- company or product names
-- specific domain examples that imply one business system
-- specific API registry or codegen assumptions
-- hardcoded test helper names
-- hardcoded dev server or environment variable assumptions
+Generalization belongs in skills, agents, commands, and README usage guidance:
 
-Replace with:
-
-- project pattern discovery
-- local convention precedence
-- conditional guidance based on detected stack
-- explicit evidence requirements
+- discover local project patterns before editing
+- apply stack-specific rules only when the stack exists
+- treat source examples as judgment references, not mandatory folder names for unrelated projects
+- require explicit evidence before claiming completion
 
 ## Validation Plan
 
 1. Check plugin structure and manifest JSON.
-2. Search for project-specific terms.
+2. Confirm `standards/` matches the source standards set.
 3. Load locally with `claude --plugin-dir ./plugins/claude-code-style-kit` when Claude CLI is available.
 4. Forward-test against a small generic React task:
    - ask for a test plan only and confirm no test code is written
