@@ -7,7 +7,7 @@ Reusable Claude Code plugin assets for producing consistent code, tests, review 
 - Original harness standards needed by the bundled skills: TypeScript style, function naming, TanStack Query, test-driven generation, and E2E network mocking.
 - Skills that apply those standards in focused workflows.
 - Agents for review, verification, testing, architecture, and build repair.
-- Thin commands for common entrypoints.
+- Thin commands for common entrypoints, including `/commit`.
 
 ## Does Not Include
 
@@ -52,4 +52,5 @@ Then run:
 /claude-code-style-kit:test-plan
 /claude-code-style-kit:review
 /claude-code-style-kit:verify
+/claude-code-style-kit:commit
 ```

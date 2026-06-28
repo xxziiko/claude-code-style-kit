@@ -38,6 +38,7 @@ The plugin should preserve the original standard documents as the source of trut
 - `tanstack-query-patterns`
 - `design-tests`
 - `write-tests`
+- `commit`
 
 ### Agents
 
@@ -56,6 +57,7 @@ The plugin should preserve the original standard documents as the source of trut
 - `test-plan`
 - `write-tests`
 - `verify`
+- `commit`
 
 ## Companion Plugin Policy
 

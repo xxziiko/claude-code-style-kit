@@ -1,0 +1,1 @@
+Use the `commit` skill. Inspect branch, staged changes, unstaged changes, untracked files, and recent commit history. Create a focused commit only for the coherent change unit, excluding secrets, local artifacts, and unrelated user changes. Match the repository's commit style and report the commit hash, files committed, verification, and any remaining gaps.

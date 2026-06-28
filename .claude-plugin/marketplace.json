@@ -20,7 +20,8 @@
         "testing",
         "react",
         "tanstack-query",
-        "code-review"
+        "code-review",
+        "commit"
       ]
     }
   ]
