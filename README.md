@@ -26,7 +26,7 @@ Recommended optional companions:
 
 ## Install
 
-Add this private marketplace in Claude Code:
+Add this public marketplace in Claude Code:
 
 ```text
 /plugin marketplace add xxziiko/claude-code-style-kit
@@ -38,7 +38,7 @@ Then install the plugin:
 /plugin install claude-code-style-kit@xxziiko-style-kit
 ```
 
-For private repository access, Claude Code uses your existing git credentials for manual install and update.
+Because this repository is public, installation does not require GitHub read authentication.
 
 ## Local Test
 

@@ -3,7 +3,7 @@
   "owner": {
     "name": "xxziiko"
   },
-  "description": "Private Claude Code plugin marketplace for reusable coding, testing, review, and TanStack Query conventions.",
+  "description": "Public Claude Code plugin marketplace for reusable coding, testing, review, and TanStack Query conventions.",
   "plugins": [
     {
       "name": "claude-code-style-kit",
