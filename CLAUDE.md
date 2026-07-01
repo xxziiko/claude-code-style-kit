@@ -1,4 +1,4 @@
-# Claude Code Style Kit Maintenance
+# Xxziiko Maintenance
 
 This repository defines reusable Claude Code plugin assets. Keep the core plugin project-agnostic.
 

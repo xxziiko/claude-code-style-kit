@@ -1,6 +1,6 @@
 {
-  "name": "claude-code-style-kit",
-  "description": "Reusable coding, testing, review, and TanStack Query conventions for consistent Claude Code output across projects.",
+  "name": "xxziiko",
+  "description": "Practical Claude Code workflow, coding, testing, review, and TanStack Query conventions for consistent project work.",
   "version": "0.1.0",
   "author": {
     "name": "kwonjiho"
@@ -13,6 +13,7 @@
     "react",
     "tanstack-query",
     "code-review",
+    "workflow",
     "commit"
   ]
 }

@@ -1,13 +1,13 @@
-# Claude Code Style Kit
+# Xxziiko
 
-Reusable Claude Code plugin assets for producing consistent code, tests, review output, and server-state patterns across new projects.
+Practical Claude Code plugin assets for running project work through a clear flow: scan, implement, fix, check, review, verify, and commit.
 
 ## Includes
 
 - Original harness standards needed by the bundled skills: TypeScript style, function naming, TanStack Query, test-driven generation, and E2E network mocking.
 - Skills that apply those standards in focused workflows.
 - Agents for review, verification, testing, architecture, and build repair.
-- Thin commands for common entrypoints, including `/commit`.
+- Thin commands for common entrypoints, including `/scan`, `/do`, `/fix`, `/check`, and `/commit`.
 
 ## Does Not Include
 
@@ -23,6 +23,9 @@ Recommended optional companions:
 
 - `oh-my-claudecode` for multi-agent orchestration.
 - `frontend-fundamentals` for additional frontend quality review lenses.
+- `ponytail` for over-engineering reduction, deletion-first review, and minimum viable diffs.
+
+See `COMPANIONS.md` for practical playbooks that combine these companions with the `xxziiko` workflow.
 
 ## Install
 
@@ -35,7 +38,7 @@ Add this public marketplace in Claude Code:
 Then install the plugin:
 
 ```text
-/plugin install claude-code-style-kit@xxziiko-style-kit
+/plugin install xxziiko@xxziiko-style-kit
 ```
 
 Because this repository is public, installation does not require GitHub read authentication.
@@ -49,8 +52,21 @@ claude --plugin-dir .
 Then run:
 
 ```text
-/claude-code-style-kit:test-plan
-/claude-code-style-kit:review
-/claude-code-style-kit:verify
-/claude-code-style-kit:commit
+/xxziiko:scan
+/xxziiko:do
+/xxziiko:fix
+/xxziiko:check
+/xxziiko:test-plan
+/xxziiko:review
+/xxziiko:verify
+/xxziiko:commit
 ```
+
+## Workflow Commands
+
+Use these commands as a practical execution flow for real project work:
+
+- `/scan`: inspect the project and requirements without editing, then define success criteria and a small implementation plan.
+- `/do`: implement the smallest safe change using existing patterns and no new dependencies unless explicitly requested.
+- `/fix`: debug from logs and reproduction evidence, fix the root cause, and rerun focused verification.
+- `/check`: inspect the diff, run available verification, and summarize changes, evidence, and remaining risks.

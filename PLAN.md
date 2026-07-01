@@ -1,8 +1,8 @@
-# Claude Code Style Kit Work Plan
+# Xxziiko Work Plan
 
 ## Goal
 
-Create a reusable Claude Code plugin that makes code, tests, reviews, and TanStack Query server-state output consistent across new projects.
+Create a reusable Claude Code plugin that makes project execution flow, code, tests, reviews, and TanStack Query server-state output consistent across new projects.
 
 The plugin should preserve the original standard documents as the source of truth, while skills provide reusable execution guidance around those standards.
 
@@ -33,6 +33,7 @@ The plugin should preserve the original standard documents as the source of trut
 ### Skills
 
 - `coding-style-guide`
+- `workflow`
 - `function-naming`
 - `dto-domain-boundary`
 - `tanstack-query-patterns`
@@ -43,6 +44,7 @@ The plugin should preserve the original standard documents as the source of trut
 ### Agents
 
 - `architect`
+- `explorer`
 - `code-reviewer`
 - `critic`
 - `verifier`
@@ -54,6 +56,10 @@ The plugin should preserve the original standard documents as the source of trut
 ### Commands
 
 - `review`
+- `scan`
+- `do`
+- `fix`
+- `check`
 - `test-plan`
 - `write-tests`
 - `verify`
@@ -85,7 +91,7 @@ Generalization belongs in skills, agents, commands, and README usage guidance:
 
 1. Check plugin structure and manifest JSON.
 2. Confirm `standards/` matches the source standards set.
-3. Load locally with `claude --plugin-dir ./plugins/claude-code-style-kit` when Claude CLI is available.
+3. Load locally with `claude --plugin-dir ./plugins/xxziiko` when Claude CLI is available.
 4. Forward-test against a small generic React task:
    - ask for a test plan only and confirm no test code is written
    - approve a small matrix and confirm tests stay inside scope
